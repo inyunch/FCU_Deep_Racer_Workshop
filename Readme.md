@@ -40,28 +40,7 @@ The lab will provide detail on the various components in the AWS DeepRacer servi
 
 
 # Section 1: Training your first model
-## Step 1: Login to the AWS DeepRacer service and create resources
-Log into the [AWS Console](https://console.aws.amazon.com/deepracer/home?region=us-east-1#getStarted).
-
-Make sure you are in the **N. Virginia** region and navigate to [AWS DeepRacer](https://console.aws.amazon.com/deepracer/home?region=us-east-1#getStarted) (Link:: https://console.aws.amazon.com/deepracer/home?region=us-east-1#getStarted).
-
-![getstarted](img/resources_created.png)
-
-If you have not yet created resources, please click the "Create Resources" button. This will take ~5 minutes to complete. This gives AWS DeepRacer permission to call Amazon SageMaker and AWS RoboMaker on your behalf, as well as spins up a CloudFormation stack that will manage the VPCs for Amazon SageMaker and AWS RoboMaker. Do not press the "Reset resources" button as this will delete the stack and restart the process. Please see [Lab 0 Create resources](https://github.com/aws-samples/aws-deepracer-workshops/tree/master/Workshops/2019-AWSSummits-AWSDeepRacerService/Lab0_Create_resources) for more details.
-
-![Lefthandnavbar](img/LHNB.png)
-
-While the stack is being created we can call out items in the left-hand navigation bar:
-
-- **Get started with reinforcement learning**: Get an interactive introduction to RL.
-- **Models**: View your list of models, create new models, or clone existing models.
-- **New! Garage**: You can now customize your own virtual cars by experimenting with different sensor combinations and neural network selections. This is also where you specify the action space for your car.
-- **Official DeepRacer Virtual Circuit**: Get ready for the 2020 League by training your models and racing in the pre-season races here.
-- **New! Community Races**: Create your own virtual races that you can share with friends and colleagues.
-
-Let's dive into the Garage first, as this is where we will customize the car we will use during model training. Please expand the left hand navigation bar and select **Garage**.
-
-## Step 2: Garage
+## Step 1:Garage
 When you visit the **Garage** for the first time you will be presented with an overview of the Garage, which you can revisit using the Info bar on the right. The Garage allows you to create and customize your own virtual cars that you will then use to train models for. By default ,the Garage contains the **The Original DeepRacer**. The original DeepRacer uses a single front-facing camera, a 3 layer convolutional neural network, and a maximum speed action space of 1m/s.
 
 Note: If you have used AWS DeepRacer before, the action space speeds have been updated to provide a closer match to real world speeds. A quick rule of thumb is to take your old model's speed and divide it by 3. This gets you to the current console value.
@@ -118,6 +97,29 @@ You should now be back in the Garage and see your vehicle.
 ![Build new vehicle](img/garage_car_created.png)
 
 Please expand the left-hand nav bar and select **Models**.
+## Step 2: 
+
+ Login to the AWS DeepRacer service and create resources
+Log into the [AWS Console](https://console.aws.amazon.com/deepracer/home?region=us-east-1#getStarted).
+
+Make sure you are in the **N. Virginia** region and navigate to [AWS DeepRacer](https://console.aws.amazon.com/deepracer/home?region=us-east-1#getStarted) (Link:: https://console.aws.amazon.com/deepracer/home?region=us-east-1#getStarted).
+
+![getstarted](img/resources_created.png)
+
+If you have not yet created resources, please click the "Create Resources" button. This will take ~5 minutes to complete. This gives AWS DeepRacer permission to call Amazon SageMaker and AWS RoboMaker on your behalf, as well as spins up a CloudFormation stack that will manage the VPCs for Amazon SageMaker and AWS RoboMaker. Do not press the "Reset resources" button as this will delete the stack and restart the process. Please see [Lab 0 Create resources](https://github.com/aws-samples/aws-deepracer-workshops/tree/master/Workshops/2019-AWSSummits-AWSDeepRacerService/Lab0_Create_resources) for more details.
+
+![Lefthandnavbar](img/LHNB.png)
+
+While the stack is being created we can call out items in the left-hand navigation bar:
+
+- **Get started with reinforcement learning**: Get an interactive introduction to RL.
+- **Models**: View your list of models, create new models, or clone existing models.
+- **New! Garage**: You can now customize your own virtual cars by experimenting with different sensor combinations and neural network selections. This is also where you specify the action space for your car.
+- **Official DeepRacer Virtual Circuit**: Get ready for the 2020 League by training your models and racing in the pre-season races here.
+- **New! Community Races**: Create your own virtual races that you can share with friends and colleagues.
+
+Let's dive into the Garage first, as this is where we will customize the car we will use during model training. Please expand the left hand navigation bar and select **Garage**.
+
 
 ## Step 3: Model List Page
 The **Models** page shows a list of all the models you have created and the status of each model. If you want to create models, this is where you start the process. Similarly, from this page you can download, clone, and delete models. If this is the first time you are using the service and have just created your resources, you should see a few sample models in your account.
